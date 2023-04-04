@@ -2,6 +2,7 @@ package models;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Product {
     private String product_name;
@@ -52,8 +53,22 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "name = '" + product_name + "\', " +
-                "price = '" + price + "\' " +
+                "product_name='" + product_name + '\'' +
+                ", price=" + price +
+                ", ingredients=" + ingredients +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Float.compare(product.price, price) == 0 && Objects.equals(product_name, product.product_name) && Objects.equals(ingredients, product.ingredients);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(product_name, price, ingredients);
     }
 }
