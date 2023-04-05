@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a575a5f-56d0-481a-a62b-404a5b86bd84" name="Changes" comment="added classes">
-      <change afterPath="$PROJECT_DIR$/src/exeptions/InvalidDataExc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Delivery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Restaurant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/ClientRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/GenericRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/EmployeeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/ClientRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/ClientRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/GenericRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/GenericRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ClientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +41,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

@@ -13,21 +13,16 @@ public class Client {
     private boolean over18;
     private List<Order> pastOrders = new ArrayList<Order>();
     private List<Float> pastPayments = new ArrayList<Float>();
+    private String email;
 
-    public Client() {
-        this.username = null;
-        this.address = null;
-        this.age = 0;
-        this.over18 = false;
-    }
-
-    public Client(String username, String address, int age, boolean over18, List<Order> pastOrders, List<Float> pastPayments) {
+    public Client(String username, String address, int age, boolean over18, List<Order> pastOrders, List<Float> pastPayments, String email) {
         this.username = username;
         this.address = address;
         this.age = age;
         this.over18 = over18;
         this.pastOrders = pastOrders;
         this.pastPayments = pastPayments;
+        this.email = email;
     }
 
     public String getUsername() {
@@ -100,6 +95,15 @@ public class Client {
                 ", over18=" + over18 +
                 ", pastOrders=" + pastOrders +
                 ", pastPayments=" + pastPayments +
+                ", email='" + email + '\'' +
                 '}';
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

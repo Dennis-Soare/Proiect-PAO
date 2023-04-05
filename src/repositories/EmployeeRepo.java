@@ -1,47 +1,48 @@
 package repositories;
 
 import models.Client;
+import models.Employee;
 
 import java.util.Arrays;
 
-public class ClientRepo implements GenericRepo<Client, String> {
+public class EmployeeRepo implements GenericRepo<Employee, String> {
 
-    private Client[] storage = new Client[11];
+    private Employee[] storage = new Employee[11];
 
     @Override
-    public void add(Client entity) {
+    public void add(Employee entity) {
         for(int i=0; i<storage.length; i++) {
             if (storage[i] == null) {
                 storage[i] = entity;
                 return;
             }
         }
-        Client[] newStorage = Arrays.<Client, Client>copyOf(storage, 2 * storage.length, Client[].class);
+        Employee[] newStorage = Arrays.<Employee, Employee>copyOf(storage, 2 * storage.length, Employee[].class);
 
         newStorage[storage.length] = entity;
         storage = newStorage;
     }
 
     @Override
-    public Client get(int id) {
+    public Employee get(int id) {
         return storage[id];
     }
 
     @Override
-    public void update(Client entity, String username) {
+    public void update(Employee entity, String first_name) {
         for (int i = 0; i < storage.length; i++)
             if (storage[i] != null && storage[i].hashCode() == entity.hashCode())
-                storage[i].setUsername(username);
+                storage[i].setFirst_name(first_name);
     }
 
 
     @Override
-    public void delete(Client entity) {
-        Client[] newStorage = new Client[storage.length - 1];
+    public void delete(Employee entity) {
+        Employee[] newStorage = new Employee[storage.length - 1];
         int j = 0;
-        for (Client client : storage) {
-            if (client != null && client.hashCode() != entity.hashCode()) {
-                newStorage[j++] = client;
+        for (Employee Employee : storage) {
+            if (Employee != null && Employee.hashCode() != entity.hashCode()) {
+                newStorage[j++] = Employee;
             }
         }
         storage = newStorage;
@@ -62,3 +63,4 @@ public class ClientRepo implements GenericRepo<Client, String> {
 
     }
 }
+
